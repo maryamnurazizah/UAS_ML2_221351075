@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blu"
+    android:padding="24dp"
+    android:fillViewport="true">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
+
+<!-- Tombol Back -->
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/transparent_card"
+        android:contentDescription="Kembali"
+        android:src="@drawable/ic_back"
+        tools:ignore="TouchTargetSizeCheck" />
+
+<!-- Judul Utama -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tentang Celestica"
+    android:background="@drawable/transparent_card"
+    android:gravity="center"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp" />
+
+<!-- Storyline Section -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/transparent_card"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Storyline"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:textSize="13sp"
+        android:text="Celestica adalah aplikasi klasifikasi jenis bintang berdasarkan data fisik seperti suhu, luminositas. Model yang digunakan adalah Artificial Neural Network (ANN), dan data diambil dari Kaggle: Star Dataset. Aplikasi ini dibuat untuk memenuhi Project UAS Pembelajaran Mesin 2 di STT Wastukancana." />
+</LinearLayout>
+
+<!-- Cara Kerja Section -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/transparent_card"
+    android:padding="16dp"
+    android:layout_marginBottom="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cara Kerja"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCCCC"
+        android:textSize="13sp"
+        android:text="• Dataset: Menampilkan informasi struktur data bintang.\n• Fitur: Menampilkan fitur yang digunakan untuk prediksi.\n• Model: Visualisasi model klasifikasi bintang (ANN)\n• Simulasi: Masukkan data dan melihat hasil klasifikasi jenis bintang." />
+</LinearLayout>
+
+<!-- Footer -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Made with ❤️ by Maryam Nurazizah"
+    android:textColor="#CCCCCC"
+    android:textSize="12sp"
+    android:layout_marginBottom="16dp" />
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blu"
+    android:padding="24dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Tombol Back -->
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/transparent_card"
+            android:contentDescription="Kembali"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Judul Utama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dataset Celestica"
+            android:background="@drawable/transparent_card"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Link Dataset -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link Dataset"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://www.kaggle.com/datasets/deepu1109/star-dataset"
+                android:textColor="#FFFF00"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Isi Dataset -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ Deskripsi Dataset"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CCCCCC"
+                android:textSize="13sp"
+                android:text="Dataset ini terdiri dari 240 entri dan 7 kolom:\n\n• Temperature (Integer): Suhu permukaan bintang (dalam Kelvin)\n• Luminosity (Float): Luminositas relatif terhadap matahari\n• Radius (Float): Radius relatif terhadap matahari\n• Absolute Magnitude (Float): Magnitudo absolut (kecerahan intrinsik)\n• Star Type (Integer): Label jenis bintang (0–5)\n• Star Color (String): Warna bintang\n• Spectral Class (String): Kelas spektral (O, B, A, F, G, K, M)" />
+        </LinearLayout>
+
+        <!-- Label Star Type -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/transparent_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ Label (Target: Star type)"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CCCCCC"
+                android:textSize="13sp"
+                android:text="0 = Brown Dwarf\n1 = Red Dwarf\n2 = White Dwarf\n3 = Main Sequence\n4 = Supergiant\n5 = Hypergiant" />
+        </LinearLayout>
+
+        <!-- Star Dataset Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Star Dataset"
+            android:textColor="#FFFF00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/transparent_card"
+            android:gravity="center" />
+
+        <!-- RecyclerView untuk menampilkan dataset -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/columnContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_dataset"
+        android:icon="@drawable/ic_dataset"
+        android:title="Dataset" />
+
+    <item
+        android:id="@+id/nav_fitur"
+        android:icon="@drawable/ic_fitur"
+        android:title="Fitur" />
+
+    <item
+        android:id="@+id/nav_model"
+        android:icon="@drawable/ic_model"
+        android:title="Model" />
+
+    <item
+        android:id="@+id/nav_simulasi"
+        android:icon="@drawable/ic_simulasi"
+        android:title="Simulasi" />
+
+</menu>
